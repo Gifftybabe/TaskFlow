@@ -1,0 +1,37 @@
+Web3Bridge Cohort VIII Pre-Qualification Exercise
+Instructions:
+1. All questions must be answered using javascript. You are at liberty to use a
+framework of your choice or use vanilla javascript
+2. All answers must be submitted using your GitHub account, The link to submit your code
+project will be shared in a separate form that will be shared with you.
+3. Please ensure to demonstrate some git workflow skills, i.e branching, pull request
+management
+4. Host a version of your solution using Github Pages, Vercel, etc. Use the documentation
+below for guidance
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+5. Adding tests for your code submission will be a plus and will give you an edge
+over other participants.
+6. Your final commit to your GitHub repository should not be later  than 7:00 PM W.A.T. All commits after that will be ignored and evaluation will be done without them
+
+Question
+Project Title: Task Management Application
+Develop a simple web application that allows users to manage their daily tasks. Users should be able to add, edit, and delete tasks, as well as mark them as complete.
+
+Features:
+Add new tasks with a title and due date.
+Edit existing tasks to update details.
+Delete tasks that are no longer needed.
+Mark tasks as complete and view a list of completed tasks.
+
+Technical Requirements:
+Use of local storage to persist tasks between sessions.
+Implementation of basic CRUD (Create, Read, Update, Delete) operations.
+
+
+NOTE:
+Include a detailed README that explains how to use the Task Management Application
+Using TypeScript or React.JS is a plus
+
+
+
