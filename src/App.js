@@ -8,7 +8,7 @@ function App() {
   const [allTodos, setTodos] = useState([]);
   const [newTitle, setNewTitle] = useState("");
   const [newDescription, setNewDescription] = useState("");
-  const [newDueDate, setNewDueDate] = useState(""); 
+  const [newDueDate, setNewDueDate] = useState("");
   const [completedTodos, setCompletedTodos] = useState([]);
   const [currentEdit, setCurrentEdit] = useState("");
   const [currentEditedItem, setCurrentEditedItem] = useState("");
@@ -18,20 +18,20 @@ function App() {
       alert("All fields are required");
       return;
     }
-    let now = new Date();
-    let dd = now.getDate();
-    let mm = now.getMonth() + 1;
-    let yyyy = now.getFullYear();
-    let h = now.getHours();
-    let m = now.getMinutes();
-    let s = now.getSeconds();
-    let addedOn = `${dd}-${mm}-${yyyy} at ${h}:${m}:${s}`;
+    // let now = new Date();
+    // let dd = now.getDate();
+    // let mm = now.getMonth() + 1;
+    // let yyyy = now.getFullYear();
+    // let h = now.getHours();
+    // let m = now.getMinutes();
+    // let s = now.getSeconds();
+    // let addedOn = `${dd}-${mm}-${yyyy} at ${h}:${m}:${s}`;
 
     let newTodoItem = {
       title: newTitle,
       description: newDescription,
-      dueDate: newDueDate, 
-      addedOn: addedOn,
+      dueDate: newDueDate,
+      // addedOn: addedOn,
     };
 
     let updatedTodoArr = [...allTodos];
@@ -39,10 +39,9 @@ function App() {
     setTodos(updatedTodoArr);
     localStorage.setItem("todolist", JSON.stringify(updatedTodoArr));
 
- 
     setNewTitle("");
     setNewDescription("");
-    setNewDueDate(""); 
+    setNewDueDate("");
   };
 
   const handleDeleteTodo = (index) => {
@@ -151,7 +150,7 @@ function App() {
               onChange={(e) => setNewDueDate(e.target.value)}
             />
           </div>
-          
+
           <div className="todo-input-item">
             <button
               type="button"
@@ -211,9 +210,9 @@ function App() {
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
                       {item.dueDate && <p>Due Date: {item.dueDate}</p>}
-                      <p>
+                      {/* <p>
                         <small>Added on: {item.addedOn}</small>
-                      </p>
+                      </p> */}
                     </div>
 
                     <div>
